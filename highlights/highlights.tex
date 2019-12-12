@@ -1,0 +1,67 @@
+\documentclass[review]{elsarticle}
+
+\usepackage{lineno}
+\usepackage{xspace}
+\modulolinenumbers[5]
+
+\journal{Advances in Engineering Software}
+
+%% `Elsevier LaTeX' style
+\bibliographystyle{elsarticle-num}
+%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%% packages and definitions (optional)
+\usepackage{placeins}
+\usepackage{booktabs} % nice rules (thick lines) for tables
+\usepackage{microtype} % improves typography for PDF
+\usepackage{hhline}
+\usepackage{amsmath}
+
+%\usepackage[demo]{graphicx}
+%\usepackage{caption}
+%\usepackage{subcaption}
+
+\usepackage{booktabs}
+\usepackage{threeparttable, tablefootnote}
+
+\usepackage{tabularx}
+\newcolumntype{b}{>{\hsize=1.0\hsize}X}
+\newcolumntype{s}{>{\hsize=.5\hsize}X}
+\newcolumntype{m}{>{\hsize=.75\hsize}X}
+\newcolumntype{x}{>{\hsize=.25\hsize}X}
+
+\graphicspath{ {figures/} }
+
+% tikz %
+\usepackage{tikz}
+\usetikzlibrary{positioning, arrows, decorations, shapes}
+
+\usetikzlibrary{shapes.geometric,arrows}
+\tikzstyle{process} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm,text centered, draw=black, fill=blue!30]
+\tikzstyle{object} = [ellipse, rounded corners, minimum width=3cm, minimum height=1cm,text centered, draw=black, fill=green!30]
+\tikzstyle{arrow} = [thick,->,>=stealth]
+
+% hyperref %
+\usepackage[hidelinks]{hyperref}
+
+\begin{document}
+\begin{frontmatter}
+\title{Demand Driven Deployment Capabilities in Cyclus, a Fuel Cycle Simulator}
+\end{frontmatter}
+\section*{Highlights}
+\begin{itemize}
+       \item We developed the capability in Cyclus, a nuclear fuel cycle
+       simulator, to automatically deploy fuel cycle facilities to 
+       create a supply chain to meet user-defined power demand. 
+       \item This new capability , d3ploy, successfully deployed fuel cycle facilities 
+       in multiple transition scenarios from the current light water reactor 
+       fleet to a closed fuel cycle with continuous recycling 
+       in fast and thermal reactors.
+       \item We conclude that using d3ploy to set up transition scenarios
+       is more efficient than previous efforts that required a user to manually 
+       calculate and use trial and error to set up the deployment scheme for the 
+       supporting fuel cycle facilities. By automating
+       this process, when the user varies input parameters in the simulation, d3ploy
+       automatically adjusts the deployment scheme to meet the new constraints.
+\end{itemize}
+\end{document}
